@@ -1,0 +1,15 @@
+plugins {
+    id 'org.springframework.boot' version '3.1.0'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-freemarker' // freemarker, starter, context-support
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+    // postgresql
+    runtimeOnly 'org.postgresql:postgresql:42.4.3'
+    // mssql
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:11.2.3.jre17'
+    // mybatis
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.1'
+}
